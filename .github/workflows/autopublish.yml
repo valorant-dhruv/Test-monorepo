@@ -26,6 +26,8 @@ jobs:
       
       - name: Install pnpm
         uses: pnpm/action-setup@v3
+        with: 9.0.3
+
           
       - name: Install dependencies
         run: pnpm install
