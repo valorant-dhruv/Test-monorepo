@@ -10,4 +10,8 @@ importers:
 
   packages/dhruv-1: {}
 
-  packages/dhruv-2: {}
+  packages/dhruv-2:
+    dependencies:
+      dhruv-1:
+        specifier: workspace:^
+        version: link:../dhruv-1
