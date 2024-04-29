@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release":"semantic-release --branches main"
+    "semantic-release": "semantic-release --branches main"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dhruv-1": "workspace:^"
+    "dhruv-1": "workspace:^",
+    "semantic-release-monorepo": "^8.0.2"
   },
   "devDependencies": {
     "semantic-release": "^23.0.8"

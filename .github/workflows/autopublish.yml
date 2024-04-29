@@ -35,7 +35,7 @@ jobs:
 
       - name: Semantic Release for npm package
         working-directory: ${{ matrix.dir }}
-        run: pnpm run semantic-release
+        run: pnpm run semantic-release -e semantic-release-monorepo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
