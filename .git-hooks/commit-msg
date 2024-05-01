@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+
+let exitcode=0;
+const validationstring=/^(fix:|feat:|perf:)/;
+const commitMsgFile = process.argv[2];
+const message = fs.readFileSync(commitMsgFile, 'utf8')
+const isValid = validationstring.test(message);
+
+if(!isValid) {
+   console.log('Cannot commit: the commit message does not comply with semantic release commits standards.');
+   exitcode = 1;
+}
+process.exit(exitcode);
