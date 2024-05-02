@@ -1,2 +1,2 @@
-const greeting="Hello dhruv here pt 3";
-export default greeting;s
+const greeting="Hello dhruv here pt 2";
+export default greeting;
